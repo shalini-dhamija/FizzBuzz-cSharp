@@ -6,7 +6,7 @@ List<string> lstPrint = new List<string>();
 string strPrint = string.Empty;
 
 while (number <=100){
-    lstPrint = new List<string>();
+    lstPrint.Clear();
     strPrint = "";
     if(number%3==0)
         lstPrint.Add("Fizz");
@@ -17,11 +17,11 @@ while (number <=100){
     if(number%7==0)
         lstPrint.Add("Bang");    
     if (number%11==0){
-        lstPrint = new List<string>();
+        lstPrint.Clear();
         lstPrint.Add("Bong");
     }
     if(number%13==0 && number%11==0){
-        lstPrint = new List<string>();
+        lstPrint.Clear();
         lstPrint.Add("FezzBong");           
     }
 
